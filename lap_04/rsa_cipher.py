@@ -93,7 +93,7 @@ class MyApp(QMainWindow):
     def call_api_verify(self):
         url = "http://127.0.0.1:5000/api/rsa/verify"
         payload = {
-            "message": self.ui.txt_plaintext.toPlainText(),
+            "message": self.ui.txt_Info.toPlainText(),
             "signature": self.ui.txt_Sign.toPlainText()
         }
         try:
